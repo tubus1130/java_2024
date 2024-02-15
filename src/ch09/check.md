@@ -6,10 +6,13 @@
 
 ![img.png](img.png)
 
+- default는 package-private이라고도 불림
+
 #### ☑️ public class
 
 - public class이면 클래스이름은 무조건 해당 파일이름과 같아야한다.
-- public class가 없어도 일반 class여도 실행됨
+  - 파일명이 Student.java이면 public class는 Student이여야 함
+- public class가 없이 디폴트 class여도 실행됨
 
 ---
 
