@@ -30,7 +30,7 @@ boolean
 
 - byte, short, int, long, char
 
-#### 6. byte는 몇 bit로 되어있나요?
+#### 6. 1byte는 몇 bit로 되어있나요?
 
 - 8bit
 
