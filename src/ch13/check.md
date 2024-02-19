@@ -30,8 +30,8 @@ public abstract class MemberManagerAbstract{
 
 #### ☑️ final
 
-- `final class` : 상속 불가
-- `final method` : 오버라이딩 불가
+- `final Class` : 상속 불가
+- `final Method` : 오버라이딩 불가
 - `final Variable` : 값 변경 불가
   - 인스턴스 변수나 클래스 변수는 생성과 동시에 초기화를 해줘야된다.
 
