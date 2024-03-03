@@ -10,8 +10,12 @@ public interface MemberManager{
 }
 ```
 
-- 인터페이스를 구현하는 클래스는 인터페이스의 `모든 메소드를 구현`해야 함
+- 인터페이스를 구현하는 클래스는 인터페이스의 `모든 메소드를 구현`해야 함(public abstract가 생략된 것)
 - 상속이 아니므로 2개 이상의 인터페이스를 구현할 수 있음(`implements`)
+- `public static final`과 `public abstract` 제어자는 생략이 가능하다
+- 자식클래스에서 상속과 구현은 동시에 가능하다
+
+[인터페이스 설명 참고사이트](https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4Interface%EC%9D%98-%EC%A0%95%EC%84%9D-%ED%83%84%ED%83%84%ED%95%98%EA%B2%8C-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC)
 
 #### ☑️ abstract class
 ```java
@@ -27,6 +31,9 @@ public abstract class MemberManagerAbstract{
 - abstract로 선언된 메소드가 하나라도 있으면, 그 클래스는 반드시 abstract로 선언되어야만 한다.
 - abstact 클래스는 몸통이 있는 메소드가 있어도 상관 없으며, static이나 final 메소드가 있어도 된다.
 - abstract클래스를 상속받는 클래스는 `abstract메소드를 모두 구현`해야 함
+- 추상클래스는 객체 생성 불가
+
+[추상클래스 설명 참고사이트](https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EC%B6%94%EC%83%81-%ED%81%B4%EB%9E%98%EC%8A%A4Abstract-%EC%9A%A9%EB%8F%84-%EC%99%84%EB%B2%BD-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
 
 #### ☑️ final
 

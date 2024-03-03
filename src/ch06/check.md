@@ -1,6 +1,62 @@
-### 6장 정리
+### 💭 6장 정리
 
 ---
+
+#### ☑️ 조건문
+```java
+class Condition{
+    public static void main(String[] args) {
+        // if else문
+        if(point > 90){
+
+        }else if(point > 80){
+
+        }else{
+
+        }
+        
+        // switch문
+        switch(비교대상변수){
+            case 점검값1: 
+                
+            break;
+            case 점검값2:
+                
+            break;
+            default:
+                
+            break;
+        }
+    }
+}
+```
+
+#### ☑️ 반복문
+
+```java
+class Loop{
+    public static void main(String[] args) {
+        // while문
+        while(boolean 조건){
+            
+        }
+        
+        // do-while문
+        do{
+            
+        }while(boolean 조건);
+        
+        // for문
+        for(초기화;종료조건;증감식) {
+
+        }
+    }
+}
+```
+
+---
+
+### 💭 단답형
 
 #### 1. if 문장의 소괄호 안에는 어떤 형태의 결과가 제공되어야 하나요?
 
