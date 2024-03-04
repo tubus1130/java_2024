@@ -67,7 +67,7 @@ class Finally{
 class Throws{
     public void throwsException(int number) throws Exception{
         if(number > 12){
-            throw new Exception("Number is over than 12"); // 이 함수를 호출한 메인메소드로 예외가 전달됨
+            throw new Exception("Number is over than 12"); // 이 함수를 호출한 메소드로 예외가 전달됨
         }
         System.out.println("Number is " + number);
     }

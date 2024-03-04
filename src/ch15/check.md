@@ -6,7 +6,7 @@
 
 - UTF-8, UTF-16, EUC-KR 등등이 존재하며 UTF-16을 많이 사용
 
-#### ☑️ length(), isEmpty()
+#### ☑️ length( ), isEmpty( )
 ```java
 class String{
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ class String{
 }
 ```
 
-#### ☑️ compareTo()
+#### ☑️ compareTo( )
 ```java
 public void compareTo(){
     String text1 = "a";
@@ -33,6 +33,9 @@ public void compareTo(){
 
 #### ☑️ StringBuffer, StringBuilder
 
+- String의 단점인 문자열 더하기 연산시, 새로운 객체를 생성한다는 점을 보완하기 위해 탄생
+  - String은 immutable이기 때문에 문자열 덧셈 연산시, 새로운 객체를 생성하고 기존객체는 GC에 의해 처리됨
+  - append() 메소드를 통해 극복
 - StringBuffer가 더 안전하다
 - StringBuilder가 더 빠르다
 
@@ -64,7 +67,7 @@ public void compareTo(){
 
 - length( )
 
-#### 7. String 클래스의 equals() 메소드와 compareTo() 메소드의 공통점과 차이점은?
+#### 7. String 클래스의 equals( ) 메소드와 compareTo( ) 메소드의 공통점과 차이점은?
 
 - 공통점은 값을 비교하는 것이고, 차이점은 equals는 boolean값 반환, compareTo는 알파벳 순서에 따른 정수값 반환
 
@@ -86,7 +89,7 @@ public void compareTo(){
 
 #### ⚠️ 12. 문자열의 모든 공백을 * 표시로 변환하려고 할때 어떤 메소드?
 
-- replaceAll( );
+- replaceAll( )
 
 #### 13. String의 단점을 보완하기 위한 두가지 클래스는?
 
