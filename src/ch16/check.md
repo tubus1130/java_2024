@@ -2,13 +2,13 @@
 
 ---
 
-#### ☑️ Nested Classes
+#### ☑️ Nested Class
 
 ![img.png](img.png)
 
-- static 사용여부에 따라 Static Nested Class와 Inner Class로 구분됨
+- 클래스에 `static 사용여부`에 따라 Static Nested Class와 Inner Class로 구분됨
 
-#### Nested Class 사용 이유
+#### ☑️ Nested Class 사용 이유
 - 한 곳에서만 사용되는 클래스를 논리적으로 묶어서 처리할 필요가 있을 때
 - 캡슐화가 필요할 때(내부구현을 감추고 싶을 때)
 - 소스의 가독성과 유지보수성을 높이고 싶을 때
@@ -97,7 +97,7 @@ public class Sample {
 }
 ```
 
-- 익명클래스나 내부클래스는 모두 다른 클래스에서 재사용할 일이 없을때 만든다
+- 익명클래스나 내부클래스는 모두 다른 클래스에서 재사용할 일이 없을때 만든다(`일회용`)
 - static nested 클래스와 다르게, 내부클래스와 익명클래스는 감싸고 있는 클래스의 어떤 변수라도 참조가능(클래스 변수, 인스턴스 변수 둘다가능)
 
 ---
@@ -112,7 +112,7 @@ public class Sample {
 
 - $가 붙는다
 ```
-$클래스명.class
+외부클래스명$내부클래스명.class
 ```
 
 #### ⚠️ 3. Static Nested 클래스는 다른 Nested 클래스와 어떤 차이가 있나요?
