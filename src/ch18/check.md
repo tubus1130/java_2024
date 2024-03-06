@@ -178,7 +178,7 @@ class Condition{
         case 점검값1:
             // 처리문장1
             break;
-        case 점검값1:
+        case 점검값2:
             // 처리문장2
             break;
         default:
@@ -200,7 +200,7 @@ class Loop{
         // 처리문장
     }while(boolean조건이 true인 경우 실행);
     
-    for(초기화; 종료조건; 조건값 증가){
+    for(초기화; 종료조건; 조건값 증감){
         // 반복문장
     }
 }
@@ -233,7 +233,7 @@ public interface InterfaceA{
 ```
 
 - 어떤 메소드가 존재해야 하는지에 대한 선언만 존재
-- 절대로 구현되어 있는 메소드가 있어서는 안됨
+- 절대로 구현되어 있는 메소드가 있어서는 안됨(body X)
 - 인터페이스를 구현하는 클래스에서는 implements를 사용하여 선언
 
 #### ☑️ 추상클래스
@@ -302,9 +302,9 @@ class Exception{
 
 #### ☑️ throw, throws
 
-- throw : 예외 객체를 던지기 위해 사용한다
+- `throw` : 예외 객체를 던지기 위해 사용한다
 - try 블록 내에서 예외를 발생시킬 경우에는 throw라는 예약어를 적어 준뒤 예외객체를 생성하거나, 생성되어있는 객체를 명시
-- throws : 예외가 발생하면 던질 것이라고 메소드 선언시 사용
+- `throws` : 예외가 발생하면 던질 것이라고 메소드 선언시 사용
 - throws라는 예약어를 적어 준뒤 예외를 선언하면 해당 메소드에서 선언한 예외가 발생하면 호출한 메소드로 예외가 전달됨
 - 두 가지 이상의 예외를 던지게 된다면 콤마로 구분하여 예외 클래스 이름을 적어줌
 - throw한 예외클래스가 catch 블록에 선언되어 있지 않거나, throws선언에 포함되어 있지 않으면 컴파일 에러 발생
@@ -413,8 +413,8 @@ class Example{
 #### 7. 지금까지의 자신의 학점이나 등수를 String 배열에 넣고 출력하는 코드를 작성해주세요.
 ```java
 class Example{
-    String[] arr = {"A+", "B-", "A0"};
-    for(String str : arr){
+    String[] score = {"A+", "B-", "A0"};
+    for(String str : score){
         System.out.println(str);
     }
 }
