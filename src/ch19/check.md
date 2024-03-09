@@ -2,8 +2,6 @@
 
 ---
 
-
-
 ![img.png](img.png)
 
 #### ☑️ JDK
