@@ -10,7 +10,7 @@ import java.io.Serializable;
 class GenericDTO<T> implements Serializable {
     private T object;
 
-    public void setObject(T obj) {
+    public void setObject(T object) {
         this.object = object;
     }
 
@@ -77,7 +77,7 @@ class WildcardSample{
 }
 ```
 
-- 와일드카드는 메소드의 매개변수로만 사용하는 것이 좋다
+- 와일드카드는 `메소드의 매개변수로만 사용`하는 것이 좋다
 - 와일드카드로 선언하고 그 객체의 값은 가져올 수 있지만, 특정타입으로 값을 지정하는 것은 불가능
 
 #### ☑️ Bounded 와일드카드

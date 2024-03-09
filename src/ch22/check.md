@@ -15,7 +15,7 @@
 
 - 배열처럼 순서가 있다
   - ex) ArrayList, LinkedList, Vector, Stack
-- Vector와 ArrayList는 비슷함, 확장 가능한 배열이라고 생각하면 됨
+- Vector와 ArrayList는 비슷함, `확장 가능한 배열`이라고 생각하면 됨
 - Vector는 Thread safe(여러명이 객체 값을 변경하려해도 문제안생김)
 - ArrayList는 Not Thread safe(여러명이 객체 값을 변경하려면 문제생김)
 - Stack은 Vector를 확장한 것, LIFO지원
@@ -140,7 +140,7 @@ ArrayList(int initialCapacity){
 #### 7. Collection 인터페이스를 구현한 클래스의 객체에서 사용할 수 있는 for 루프의 구조는?
 
 ```java
-for(타입 변수 : 객체)
+for(타입 변수 : 컬렉션객체)
 
 for(String str : list){
   System.out.println(str);
