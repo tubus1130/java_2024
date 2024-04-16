@@ -1,11 +1,23 @@
 ### 💭 23장 정리
 
+- Set
+- Queue
+- LinkedList
+
+#### 참고링크
+
+[컬렉션 인터페이스](https://inpa.tistory.com/entry/JCF-%F0%9F%A7%B1-Collections-Framework-%EC%A2%85%EB%A5%98-%EC%B4%9D%EC%A0%95%EB%A6%AC#collection_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4)
+
 ---
+
+![img.png](img.png)
 
 #### ☑️ Set
 
 - 순서에 상관없이 어떤 데이터가 존재하는지를 확인하기 위한 용도
-- 중복방지
+- 데이터 중복을 허용하지 않고 순서를 유지하지 않음
+- 순서 자체가 없으므로 인덱스로 객체를 검색해서 가져오는 get메소드도 존재하지 않음
+- 중복저장이 불가능하기 때문에 Null값도 하나만 저장가능
 - 정렬여부에 따라 성능차이가 발생함
 - `HashSet`
   - 순서가 전혀 필요 없는 데이터를 해시테이블에 저장
@@ -34,6 +46,15 @@ remove(Object o) : 매개변수로 넘어온 객체를 삭제
 size() : 데이터의 개수를 리턴
 ```
 
+#### ☑️ LinkedHashSet
+
+- 순서를 가지는 Set 자료구조
+
+#### ☑️ TreeSet
+
+- 중복허용하지 않고 순서를 가지지않음
+- 데이터를 `정렬`하여 저장함
+
 #### ☑️ Queue
 
 - FIFO(First In First Out)
@@ -43,7 +64,7 @@ size() : 데이터의 개수를 리턴
 #### ☑️ LinkedList
 
 - LinkedList는 여러 종류의 인터페이스를 구현했기 때문에 중복된 기능을 수행하는 메소드가 많다
-  - List, Queue, Deque 등
+  - List, Queue 등
 
 ```
 # LinkedList의 삽입 메소드
